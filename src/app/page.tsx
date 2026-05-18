@@ -36,6 +36,26 @@ function FloralDecorationRight() {
   );
 }
 
+function BackgroundAtmosphere() {
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden z-0 select-none">
+      {/* Dynamic ambient sun reflections / light leaks */}
+      <div className="absolute top-[12%] left-[-15%] w-[350px] sm:w-[650px] h-[350px] sm:h-[650px] rounded-full bg-accent/6 blur-[80px] sm:blur-[130px] animate-pulse-glow" />
+      <div className="absolute top-[32%] right-[-15%] w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] rounded-full bg-primary/4 blur-[70px] sm:blur-[120px] animate-pulse-glow-delayed" />
+      <div className="absolute top-[52%] left-[10%] w-[250px] sm:w-[500px] h-[250px] sm:h-[500px] rounded-full bg-accent/5 blur-[60px] sm:blur-[110px] animate-pulse-glow" />
+      <div className="absolute top-[78%] right-[-5%] w-[320px] sm:w-[550px] h-[320px] sm:h-[550px] rounded-full bg-primary/5 blur-[80px] sm:blur-[125px] animate-pulse-glow-delayed" />
+
+      {/* Floating golden sun flecks (luciérnagas / briznas de luz) */}
+      <div className="absolute top-[15%] left-[20%] w-2 h-2 rounded-full bg-accent/40 blur-[1px] animate-sparkle-1" />
+      <div className="absolute top-[25%] right-[25%] w-3 h-3 rounded-full bg-primary/30 blur-[2.5px] animate-sparkle-2" />
+      <div className="absolute top-[42%] left-[15%] w-1.5 h-1.5 rounded-full bg-accent/50 animate-sparkle-3" />
+      <div className="absolute top-[60%] right-[30%] w-2.5 h-2.5 rounded-full bg-primary/35 blur-[1.5px] animate-sparkle-4" />
+      <div className="absolute top-[72%] left-[25%] w-2 h-2 rounded-full bg-accent/40 blur-[1px] animate-sparkle-1" />
+      <div className="absolute top-[85%] right-[20%] w-1.5 h-1.5 rounded-full bg-accent/50 animate-sparkle-3" />
+    </div>
+  );
+}
+
 export default function Home() {
   const { wedding, salon, schedule, logistics } = tenant;
 
@@ -46,8 +66,12 @@ export default function Home() {
 
       {/* Main Content Layout with soft ambient dividers */}
       <main className="flex-1 bg-bg-custom relative z-10">
-        {/* Background Swaying Leaves Overlay Decorations */}
+        {/* Background Swaying Leaves & Ambient Light Atmosphere */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+          {/* Ambient reflections and floating bokeh lights */}
+          <BackgroundAtmosphere />
+
+          {/* Swaying branches */}
           <div className="absolute top-[8%] left-0">
             <FloralDecorationLeft />
           </div>
