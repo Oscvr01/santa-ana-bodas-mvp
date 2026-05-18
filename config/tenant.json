@@ -1,0 +1,73 @@
+{
+  "theme": {
+    "primary": "#606C38",
+    "primaryHover": "#475324",
+    "secondary": "#FEFAE0",
+    "accent": "#DDA15E",
+    "background": "#FAF8F2",
+    "text": "#282F1E",
+    "textLight": "#6C7560"
+  },
+  "wedding": {
+    "couple": {
+      "partner1": "María",
+      "partner2": "Carlos",
+      "conjunction": "y"
+    },
+    "date": "2026-09-19T18:00:00",
+    "heroBgImage": "/images/hero-bg.png",
+    "rsvpDeadline": "2026-08-20"
+  },
+  "salon": {
+    "name": "Restaurante Santa Ana",
+    "address": "Avda. Murcia, 244, 30589 Los Ramos, Murcia, España",
+    "coordinates": {
+      "lat": 37.9358,
+      "lng": -1.0553
+    }
+  },
+  "schedule": [
+    {
+      "time": "18:00",
+      "title": "Ceremonia Civil",
+      "description": "El 'Sí, quiero' bajo la gran cúpula forestal en La Pinada de Santa Ana.",
+      "icon": "heart"
+    },
+    {
+      "time": "19:30",
+      "title": "Cóctel de Bienvenida",
+      "description": "Aperitivos murcianos modernos y bebidas frías en los Jardines de Altaona.",
+      "icon": "glass"
+    },
+    {
+      "time": "21:30",
+      "title": "Banquete de Bodas",
+      "description": "Cena de gala de autor diseñada por la chef Estrella Carrillo en el Salón Alquimia.",
+      "icon": "utensils"
+    },
+    {
+      "time": "23:30",
+      "title": "Gran Fiesta",
+      "description": "Barra libre, recena gourmet de madrugada y baile en La Era de Santa Ana.",
+      "icon": "music"
+    }
+  ],
+  "logistics": {
+    "buses": [
+      {
+        "id": "bus-ida",
+        "route": "Ida: Murcia Centro -> Restaurante Santa Ana",
+        "departureTime": "17:15",
+        "pickupLocation": "Plaza Circular (frente a la parada del tranvía)",
+        "notes": "Se ruega puntualidad de 10 minutos antes de la salida."
+      },
+      {
+        "id": "bus-vuelta",
+        "route": "Vuelta: Restaurante Santa Ana -> Murcia Centro",
+        "departureTimes": ["02:30", "04:30", "06:30"],
+        "pickupLocation": "Puerta principal de salida del recinto",
+        "notes": "Paradas intermedias bajo demanda en el recorrido de vuelta."
+      }
+    ]
+  }
+}
